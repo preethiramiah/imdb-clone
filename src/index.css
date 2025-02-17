@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import 'primereact/resources/themes/bootstrap4-dark-blue/theme.css';
+@import 'primereact/resources/primereact.min.css';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
