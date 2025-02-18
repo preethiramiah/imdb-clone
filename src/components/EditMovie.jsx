@@ -15,7 +15,7 @@ import AddProducer from "./AddProducer"
 import { getMovieById, updateMovie } from '../api'
 
 const EditMovie = () => {
-  const movieId = window.location.pathname?.split('/').pop()
+  const movieId = window.location.hash?.split('/').pop()
   const dispatch = useDispatch()
   const actors = useSelector(state => state.globalStore.actorsState.actors)
   const isActorsLoading = useSelector(state => state.globalStore.actorsState.isLoading)

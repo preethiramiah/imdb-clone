@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router"
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import imdbLogo from './assets/images/imdb.svg'
 import Movies from './components/Movies'
 import AddMovie from './components/AddMovie'
@@ -14,13 +14,13 @@ function App() {
         <p>A clone of IMDb displaying a small set of movies where you can edit the movie details</p>
       </header>
       <main className='mt-24'>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Movies />} />
             <Route path="/add-movie" element={<AddMovie />} />
             <Route path="/edit-movie/:movieId" element={<EditMovie />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </main>
       <footer className='flex items-center h-16 bg-gray-800 text-white w-[99dvw] pl-5'>
         <p>

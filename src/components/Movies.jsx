@@ -30,11 +30,11 @@ const Movies = () => {
   }
 
   const editBodyTemplate = movie => {
-    return <a target="_self" className="ml-6 hover:underline" href={`${window.location.origin}/edit-movie/${movie.id}`}>Edit</a>
+    return <a target="_self" className="ml-6 hover:underline" href={`${window.location.origin}/#/edit-movie/${movie.id}`}>Edit</a>
   }
 
   const gotoAddMovie = () => {
-    window.open(`${window.location.origin}/add-movie`, '_self')
+    window.open(`${window.location.origin}/#/add-movie`, '_self')
   }
 
   const header = (
